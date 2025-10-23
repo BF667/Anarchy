@@ -1,4 +1,4 @@
-require("./config/global");
+require("./lib/global");
 const path = require("path");
 const fs = require("fs");
 const {
@@ -19,8 +19,8 @@ let useCode = {
   isTrue: true,
 };
 
-const sleep = require("./utils/sleep");
-const logger = require("./utils/logger");
+const sleep = require("./lib/sleep");
+const logger = require("./lib/logger");
 
 const log = pino({ level: "fatal" }).child({ level: "fatal", stream: "store" });
 
